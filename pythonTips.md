@@ -13,4 +13,4 @@ b 调用本方法，进行递归求值
 
 6 type(x) 用来查看x的类型，type(x).__name__可以将类型用str表示
 
-7 pickle模块。实现了一个算法，将python对象序列化和反序列化
+7 pickle模块。实现了一个算法，将python对象序列化和反序列化，将python对象层次转为字节流

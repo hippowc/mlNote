@@ -1,16 +1,18 @@
-1 python 列表解析，基本形式：[fun(x) for x in liter(x)] 
-通过对可迭代对象liter(x)的迭代，返回一个fun(x)的列表
+1 加载自定义python模块，模块本身无要求，正常写方法，类都ok，不需要export之类的。在引用时：
+--在shell中引用。python会在sys.path列表保存的位置进行遍历，若要添加自定义模块，需要在sys.path中添加新路径.
+import sys
+sys.path.append('xx/xx')
+--在文件中引用。
+如果要引用的模块当前文件在同一目录，可以直接引用文件名。
+若不在同一目录，要先将路径添加到sys.path，在引用文件
+import sys
+sys.path.append('xx/xx')
+import Hello
 
-2 set(),set操作，去掉列表中的重复对象。类似的方法：str(), int(),float()等
+2 import xx as xx 将引入的模块重命名
 
-3 关于递归的写法：
-a 首先写明终止条件，如果符合，则返回
-b 调用本方法，进行递归求值
+3 打开文件open()，即可返回文件对象，或者 with open() as f
 
-4 list.count(obj),返回该元素在list中出现的次数
+4 命令行输入 raw_input("prompt"),返回输入值
 
-5 del 用于删除列表中的某个值，或删除整个变量的引用
-
-6 type(x) 用来查看x的类型，type(x).__name__可以将类型用str表示
-
-7 pickle模块。实现了一个算法，将python对象序列化和反序列化，将python对象层次转为字节流
+5 numpy包用于科学计算

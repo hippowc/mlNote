@@ -8,3 +8,7 @@ training data是32*32的像素矩阵，class label是对应数值。首先将32*
 
 优缺点：
 knn是一个基于实例的算法，在分类时很有效，但是要有data-set，要有存储空间，要计算和每一个数据的距离。另外knn会让你看不懂底层的数据结构，不知道distance到底是什么样
+
+一些有用的地址：
+http://blog.csdn.net/pongba/article/details/2915005
+http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/
